@@ -80,10 +80,40 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    
 }
 
+@media (max-height: 600px) {
+
+    .current-temperature__tempo-agora{
+        display: none;
+    }
+     
+    .header__search-bar{
+        display: flex;
+        justify-content: center;
+        margin-top: 3px;
+        align-items: center;
+    }
+    .current-temperature {
+        margin: 0 auto;
+        font-size: 15px;
+      }
+    .bottom-container{
+        background: #fff;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        border-radius: 25px 25px 0 0;
+        box-shadow: rgba(50, 50, 93, 0,25) 0px 2px 5px -1px, 
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        max-height: 160px;
+    }
+    
+  }
+
 .current-temperature__cloud-image{
-    width: 125px;
+    width: 100px;
     margin-top: 15px;
 }
 
@@ -114,7 +144,7 @@ body {
 
 .bottom-container{
     background: #fff;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     border-radius: 25px 25px 0 0;

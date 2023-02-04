@@ -18,6 +18,7 @@ const porDoSol = document.getElementById('por-do-sol')
 
 const apiKey = "3e57485367dafafecbb48d887bef2916"
 
+
 button.addEventListener("click", () =>{
     let nomeCidade = search.value
     getClimaCidade(nomeCidade)
